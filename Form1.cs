@@ -19,7 +19,7 @@ namespace React_Native_Starter_Kitten_UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            TopMost = true;
         }
     }
 }
