@@ -35,6 +35,8 @@
             this.htmlLabel3 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // htmlLabel1
@@ -70,7 +72,7 @@
             // 
             // 
             this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(156, 1);
+            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(120, 1);
             this.metroTextBox1.CustomButton.Name = "";
             this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -118,7 +120,8 @@
             this.metroTextBox2.Enabled = false;
             this.metroTextBox2.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.metroTextBox2.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
-            this.metroTextBox2.Lines = new string[0];
+            this.metroTextBox2.Lines = new string[] {
+        "[not set]"};
             this.metroTextBox2.Location = new System.Drawing.Point(287, 86);
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Name = "metroTextBox2";
@@ -131,6 +134,7 @@
             this.metroTextBox2.Size = new System.Drawing.Size(253, 23);
             this.metroTextBox2.Style = MetroFramework.MetroColorStyle.Silver;
             this.metroTextBox2.TabIndex = 4;
+            this.metroTextBox2.Text = "[not set]";
             this.metroTextBox2.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox2.UseSelectable = true;
             this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -160,11 +164,33 @@
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
+            // metroButton2
+            // 
+            this.metroButton2.Location = new System.Drawing.Point(184, 151);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(171, 23);
+            this.metroButton2.TabIndex = 6;
+            this.metroButton2.Text = "Install React Native CLI";
+            this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            // 
+            // metroButton3
+            // 
+            this.metroButton3.Location = new System.Drawing.Point(162, 180);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(210, 23);
+            this.metroButton3.TabIndex = 7;
+            this.metroButton3.Text = "Create project with template";
+            this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 413);
+            this.Controls.Add(this.metroButton3);
+            this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroTextBox2);
             this.Controls.Add(this.metroTextBox1);
@@ -189,6 +215,8 @@
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel3;
         private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton metroButton3;
     }
 }
 
