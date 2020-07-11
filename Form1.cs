@@ -21,5 +21,11 @@ namespace React_Native_Starter_Kitten_UI
         {
             TopMost = true;
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.ShowDialog();
+            metroTextBox2.Text = folderBrowserDialog1.SelectedPath;
+        }
     }
 }
